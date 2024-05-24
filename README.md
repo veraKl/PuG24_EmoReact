@@ -1,5 +1,5 @@
-# Psychologie and Gehirn 2023 Posters Supplementary Webpage
-This is the repo for Samuel Sanders PuG2023 poster supplementary webpage.
+# Psychologie and Gehirn 2024 Poster Supplementary Webpage
+This is the repo for Vera Klütz's and Joshua Rocha's PuG2024 poster supplementary webpage.
 
 It is forked from Eliahu Horwitz's [template](https://github.com/eliahuhorwitz/Academic-project-page-template).
 
