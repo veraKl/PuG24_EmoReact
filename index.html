@@ -180,6 +180,7 @@
     <div class="container">
       <h2 class="title is-3 is-centered has-text-centered">Data Analysis</h2>
     <br><br>
+      
     <h3 class="title is-4">Preprocessing</h3>
         <h2 class="subtitle has-text-justified">
           The MEG data went through the following preprocessing steps:
@@ -188,31 +189,29 @@
             <li>Event extraction and epoching</li>
             <li>Autorejection of bad epochs</li>
             <li>ICA with rejection of ECG and EOG related signals</li>
-          </ul>   
+           </ul>   
           <br>
-          Additionally, as recent literature suggests only minimal preprocessing (Delorme, 2023b), a second version has been obtained with only highpassed epochs. Despite a bigger confidence interval for minimal preprocessed data, no difference in classification accuracy could be found.
+          Additionally, as recent literature suggests only minimal preprocessing (Delorme, 2023b), a second version has been obtained with only highpassed epochs. Despite 
+          a bigger confidence interval for minimal preprocessed data, no difference in classification accuracy could be found.
         </h2>
-
-
-
-
+      <br><br>
+      
       <h3 class="title is-4">Classificaton steps</h3>
         <h2 class="subtitle has-text-justified">
           First, we establish a classification pipeline. Therefore, we use and easy-to-test target, as decoding emotions will introduce more possible error sources. 
           Here, we decode in which of 4 corners the GIF was shown. As a machine learning classifier we use Logistic Regression and Random Forest, which yield similar results.
           The figure shows, at which timepoint it is possible to accurately classify the GIF's position.
-          </h2>
-            <!-- Your image here -->
-        <img src="static/images/data_analysis_flowchart.PNG" alt="steps the data goes through from raw to bein classified"/>
-
-      <h2 class="subtitle has-text-justified">
-          Next, different features of the MEG signal were extracted to see how much they contribute to a correct classification. When extracting delta, theta, alpha, and beta frequency 
+          <br>
+           Next, different features of the MEG signal were extracted to see how much they contribute to a correct classification. When extracting delta, theta, alpha, and beta frequency 
         bands, our classification results solely based on these bands yield a peak accuracy of 33%.
-<br>
-        After the pipeline has been tested and established, the target will be changed to affect related items such as valence and arousal. Additionally, different features will be tested
-to see how much they contribute.
-      
+        <br>
+        After the pipeline has been tested and established, the target will be changed to affect related items such as valence and arousal. Additionally, different features
+          will be tested to see how much they contribute.
           </h2>
+      
+            <!-- Your image here -->
+        <img src="static/images/data_analysis_flowchart.PNG" alt="steps the data goes through from raw to bein classified" height="80%"/>
+      
     </div>
   </div>
 </section>
