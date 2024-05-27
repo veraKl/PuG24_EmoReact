@@ -140,7 +140,8 @@
         <img src="static/images/JR_ERP_ExpDes_FC.png" autoplay loop height="100%" muted>
       </div>
       <h2 class="subtitle has-text-centered">
-     
+      <br><br>
+      <br><br>
     </h2>
      
   </div>
@@ -178,68 +179,21 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 is-centered has-text-centered">Data Analysis</h2>
-      <br>
-      <h3 class="title is-4">Deep Neural Networks</h3>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/deep1.PNG" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          The research found that inversion significantly decreases recognition accuracy in all models (ResNet, AlexNet, and VGG-16), but the model architecture has no significant influence on the extent of the inversion effect. This result, consistent with previous studies, suggests that perceptual phenomena like the Thatcher effect or mirror confusion in deep neural networks may be due to previous experience with faces or objects, not the specific network architecture.
-        </h2>
-        </div>
-        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/deep2.PNG" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          The degree of orientation significantly influences object recognition in deep neural networks, with all models (AlexNet, ResNet, VGG-16) showing best recognition performance at upright orientation and additional peaks at 90 and 180 degrees. These findings emphasize the importance of understanding preprocessing steps during training, such as data augmentation, which may have a greater impact on results than the choice of model architecture.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/deep3.PNG" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Inversion Effects from the selected object categories differ significantly. Stimuli from these categories were chosen for the behavioral study with finetuned deep nets and humans.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/deep4.PNG" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        A representational similarity analysis (RSA) was conducted on ResNet-50, AlexNet, and VGG-16 models, revealing no significant differences in activations in the penultimate layer of the neural networks based on the orientation of stimuli. Despite expectations, inverted and upright images are represented similarly in the networks' features, with late layers displaying more invariance to image transformations like rotation or translations.
-      </h2>
-    </div>
-    </div>
-
+     
     <br><br><br>
-    <h3 class="title is-4">Humans</h3>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/human1.PNG" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          A paired-samples t-test revealed a significant decrease in recognition performance for inverted images compared to upright ones.
-        </h2>
-        </div>
-        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/human2.PNG" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          A two-way repeated-measures ANOVA on recognition accuracy across object category and orientation revealed significant main effects for orientation and category, but not for their interaction, indicating no significant difference in inversion effects across groups. However, post-hoc analysis showed a significant decrease in recognition performance for inverted images in the 'weasel' category, decreasing recognition performance by about 5 percent. No significant differences in inversion effects were found across the other nine categories, and this may be attributed to efficient face recognition mechanisms being recruited during the recognition of animate objects and to the nature of the experimental design and the selected categories. It's suggested that object categories are processed holistically when exemplar individuation is needed, the category belongs to a homogeneous group, and the objects have a canonical orientation.
-        </h2>
-      </div>
-    </div>
-
-    <br><br><br>
-    <h3 class="title is-4">Humans vs. Deep Neural Networks</h3>
+    <h3 class="title is-4">Preprocessing</h3>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
         <img src="static/images/humandeep1.PNG" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          To investigate whether humans and neural networks exhibit similar behaviors, neural networks were modified to match a 10-way classification task, trained with the Ecoset pre-trained models, and tested on upright and inverted images.  Misclassifications
-          in humans and neural networks mainly pointed to problems with classes that are
-          conceptually similar. In my data, eggplants were misclassified as onions and vice versa.
+          THe MEG data went through the following preprocessing steps:
+          - Highpass-, lowpass- and notch-filtering
+          - Event extraction and epoching
+          - Autorejection of bad epochs
+          - ICA with rejection of ECG and EOG related signals
+          <br>
+          Additionally, as recent literature suggests only minimal preprocessing, a second version has been obtained with only highpassed epochs. Despite a bigger confidence interval for minimal preprocessed data, no difference in classification accuracy could be found.
         </h2>
         </div>
         <div class="item">
