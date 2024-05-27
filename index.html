@@ -179,8 +179,7 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 is-centered has-text-centered">Data Analysis</h2>
-     
-    <br><br><br>
+    <br><br>
     <h3 class="title is-4">Preprocessing</h3>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
@@ -188,20 +187,16 @@
         <img src="static/images/humandeep1.PNG" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           THe MEG data went through the following preprocessing steps:
-          - Highpass-, lowpass- and notch-filtering
-          - Event extraction and epoching
-          - Autorejection of bad epochs
-          - ICA with rejection of ECG and EOG related signals
+           <ul>
+            <li>Highpass-, lowpass- and notch-filtering</li>
+            <li>Event extraction and epoching</li>
+            <li>Autorejection of bad epochs</li>
+            <li>ICA with rejection of ECG and EOG related signals</li>
+          </ul>   
           <br>
           Additionally, as recent literature suggests only minimal preprocessing, a second version has been obtained with only highpassed epochs. Despite a bigger confidence interval for minimal preprocessed data, no difference in classification accuracy could be found.
         </h2>
         </div>
-        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/humandeep2.PNG" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Results showed significantly high correlations in response patterns between humans and models, suggesting similarities in classification behaviors. When analyzing error distributions by excluding correct responses, correlations between humans and neural networks were found to be low to moderate, with ResNet and VGG-16 showing the highest similarity to human errors. However, divergent classification patterns between humans and deep neural networks (DNNs) emerged when the level of image distortion increased, with misclassifications often occurring among conceptually similar classes, suggesting that current neural network architectures may need further refinement to better emulate human behavior.
-        </h2>
       </div>
     </div>
 
