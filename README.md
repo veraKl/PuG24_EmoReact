@@ -1,7 +1,7 @@
 # Psychologie and Gehirn 2024 Poster Supplementary Webpage
 This is the repo for Vera Klütz's and Joshua Rocha's PuG2024 poster supplementary webpage.
 
-It is forked from Samuel Sander's template, which itself was foked from Eliahu Horwitz's [template](https://github.com/eliahuhorwitz/Academic-project-page-template).
+It is forked from Samuel Sander's template, which itself was forked from Eliahu Horwitz's [template](https://github.com/eliahuhorwitz/Academic-project-page-template).
 
 ## Go to web page for further information
 With using this [LINK](https:///veraKl.github.io/PuG24_EmoReact/)! 
