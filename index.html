@@ -120,8 +120,8 @@
         <h2 class="title is-3">Poster Abstract</h2>
         <div class="content is-5 has-text-justified">
           <p>
-            Emotions are thought to influence activity in human brain areas that control decisions, direct attention, and motivate behavior in our surrounding world. Indeed, affective neuroscience has long since attempted to explore the underlying mechanisms of emotion processing that are interlocked with perception, cognition, motivation, and action in the brain. However, the organization of the anatomical and functional neural networks that overall form our emotion processing architecture are yet to be fully elucidated.<br>
-            This study aimed to investigate this by measuring the positive and negative affect of a set of short video clips (GIFs), which have previously been validated and classified by thousands of participants into 27 distinct emotion categories, using Magnetoencephalography (MEG). Healthy participants are placed in the MEG scanner and subjected to a behavioral psychophysics task, in which a total of 144 positive or negative affect-inducing GIFs are shown in a randomized order and subsequently rated on a 5-point scale of the valence and arousal dimensions in each trial. As a next step (currently in progress), the obtained MEG signals will be analyzed using machine learning algorithms to extract neural markers of positive and negative affect processing.<br>
+            Emotions are thought to influence activity in human brain areas that control decisions, direct attention, and motivate behavior in our surrounding world. Indeed, affective neuroscience has long since attempted to explore the underlying mechanisms of emotion processing that are interlocked with perception, cognition, motivation, and action in the brain.<sup>[1]</sup> However, the organization of the anatomical and functional neural networks that overall form our emotion processing architecture are yet to be fully elucidated.<br>
+            This study aimed to investigate this by measuring the positive and negative affect of a set of short video clips (GIFs), which have previously been validated and classified by thousands of participants into 27 distinct emotion categories<sup>[2]</sup>, using Magnetoencephalography (MEG). Healthy participants are placed in the MEG scanner and subjected to a behavioral psychophysics task, in which a total of 144 positive or negative affect-inducing GIFs are shown in a randomized order and subsequently rated on a 5-point scale of the valence and arousal dimensions in each trial. As a next step (currently in progress), the obtained MEG signals will be analyzed using machine learning algorithms to extract neural markers of positive and negative affect processing.<br>
             These preliminary findings could potentially lead to an improved understanding of the neural networks involved in emotion processing and furthermore facilitate the development of novel translational approaches against affective disorders such as major depression and bipolar disorder, along with methods to detect affect processing in the absence of behavioral input in cases such as sleep or resting state memory consolidation.
           </p>
         </div>
@@ -163,7 +163,7 @@
       <h2 class="subtitle has-text-centered">
         <b>An example of an experiment round</b>
       </h2>
-        <h2 class="subtitle is-5 has-text-justified">
+        <h2 class="subtitle is-6 has-text-justified">
         In each trial, a red fixation cross first appears at the center of one of four quadrants on the screen to draw the attention of the participant to that part of the screen. 
         <br>One of the 144 GIFs then plays out and the participant pushes a button on a controller to indicate the moment they felt an emotion. 
         <br>The participant subsequently rates how positive or negative the emotion they felt was on a 5-point Valence scale, and how calm or excited the emotion they felt was on a 5-point Arousal scale. 
@@ -184,7 +184,7 @@
     <br>
       
     <h3 class="title is-4 is-centered has-text-centered">Preprocessing</h3>
-        <h2 class="subtitle is-5 has-text-justified">
+        <h2 class="subtitle is-6 has-text-justified">
           <br>The MEG data went through the following preprocessing steps:
            <ul>
             <li>- Highpass-, lowpass- and notch-filtering</li>
@@ -193,13 +193,13 @@
             <li>- ICA with rejection of ECG and EOG related signals</li>
            </ul>   
           <br>
-          Additionally, as recent literature suggests only minimal preprocessing (Delorme, 2023b), a second version has been obtained with only highpassed epochs. Despite 
+          Additionally, as recent literature suggests only minimal preprocessing<sup>[3]</sup>, a second version has been obtained with only highpassed epochs. Despite 
           a bigger confidence interval for minimal preprocessed data, no difference in classification accuracy could be found.
         </h2>
       <br>
       
       <h3 class="title is-4 is-centered has-text-centered">Classificaton steps</h3>
-        <h2 class="subtitle is-5 has-text-justified">
+        <h2 class="subtitle is-6 has-text-justified">
           <br>First, we establish a classification pipeline. Therefore, we use and easy-to-test target, as decoding emotions will introduce more possible error sources. 
           Here, we decode in which of 4 corners the GIF was shown. As a machine learning classifier we use Logistic Regression and Random Forest, which yield similar results.
           The figure shows, at which timepoint it is possible to accurately classify the GIF's position.
@@ -265,9 +265,9 @@
     <div class="container is-max-desktop content">
       <h2 class="title is-centered has-text-centered">Literature</h2>
       <pre><code>
-Brosch, T., Scherer, K., Grandjean, D., & Sander, D. (2013). The impact of emotion on perception, attention, memory, and decision-making. Swiss Medical Weekly, 143(1920), w13786. https://doi.org/10.4414/smw.2013.13786
-Cowen, A. S., & Keltner, D. (2017). Self-report captures 27 distinct categories of emotion bridged by continuous gradients. Proceedings of the National Academy of Sciences, 114(38), E7900 – E7909. https://doi.org/10.1073/pnas.1702247114
-Delorme, A. (2023b). EEG is better left alone. Scientific Reports, 13(1). https://doi.org/10.1038/s41598-023-27528-0     
+[1] Brosch, T., Scherer, K., Grandjean, D., & Sander, D. (2013). The impact of emotion on perception, attention, memory, and decision-making. Swiss Medical Weekly, 143(1920), w13786. https://doi.org/10.4414/smw.2013.13786
+[2] Cowen, A. S., & Keltner, D. (2017). Self-report captures 27 distinct categories of emotion bridged by continuous gradients. Proceedings of the National Academy of Sciences, 114(38), E7900 – E7909. https://doi.org/10.1073/pnas.1702247114
+[3] Delorme, A. (2023b). EEG is better left alone. Scientific Reports, 13(1). https://doi.org/10.1038/s41598-023-27528-0     
       </code></pre>
     </div>
 </section>
